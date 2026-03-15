@@ -1,0 +1,11 @@
+<svg width="260" height="60" viewBox="0 0 260 60" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="40" height="40" rx="8" fill="#1D4ED8"></rect>
+  <rect x="22" y="22" width="16" height="16" rx="4" fill="#3B82F6"></rect>
+  
+  <text x="70" y="38" font-family="Inter, Arial" font-size="26" font-weight="700" fill="#1E40AF">
+    KV Systems
+  </text>
+  <text x="70" y="55" font-family="Inter, Arial" font-size="12" fill="#1D4ED8">
+    Your Digital Backend, Engineered Correctly.
+  </text>
+</svg>
