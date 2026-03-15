@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — KV Systems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <div class="nav-left">
+        <img src="assets/logos/kv-systems-logo.svg" class="logo-img" alt="KV Systems Logo">
+        <div class="menu-btn" id="menu-btn">☰</div>
+    </div>
+
+    <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero fade" style="padding: 110px 40px;">
+    <h1>Let’s Build Your System</h1>
+    <p>Tell us what you need. Websites, automation, AI agents, backend logic — we can build it.</p>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="section fade">
+    <h2>Contact Us</h2>
+
+    <div class="card fade" style="max-width: 700px; margin: auto;">
+        
+        <form action="https://formspree.io/f/xgvvkepl" method="POST">
+
+            <label style="font-weight:600;">Your Name</label>
+            <input type="text" name="name" required 
+                style="width:100%;padding:14px;margin:8px 0 20px;border-radius:8px;
+                border:1px solid var(--card-border);background:var(--card-bg);color:var(--text);">
+
+            <label style="font-weight:600;">Email Address</label>
+            <input type="email" name="email" required
+                style="width:100%;padding:14px;margin:8px 0 20px;border-radius:8px;
+                border:1px solid var(--card-border);background:var(--card-bg);color:var(--text);">
+
+            <label style="font-weight:600;">How Can We Help?</label>
+            <textarea name="message" rows="6" required
+                style="width:100%;padding:14px;margin:8px 0 20px;border-radius:8px;
+                border:1px solid var(--card-border);background:var(--card-bg);color:var(--text);"></textarea>
+
+            <button type="submit"
+                style="background:var(--blue-primary);color:#fff;padding:14px 28px;border:none;
+                border-radius:8px;font-size:16px;font-weight:700;cursor:pointer;width:100%;margin-top:10px;">
+                Send Message
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta fade">
+    <h2>Prefer Email?</h2>
+    <p>You can reach us directly at <strong>info@kvacademy.org</strong></p>
+    <a href="mailto:info@kvacademy.org" class="cta-btn">Send Email</a>
+</section>
+
+<footer>
+    <p>© 2025 KV Systems — All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

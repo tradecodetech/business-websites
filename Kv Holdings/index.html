@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keen Visions Holdings</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">KV Holdings</div>
+    <div class="mobile-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="capabilities.html">Capabilities</a></li>
+        <li><a href="deck.html">Deck</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero fade-in">
+    <h1>Keen Visions Holdings</h1>
+    <p>A strategic parent company powering ventures across finance, education, wellness, and digital systems.</p>
+  </section>
+
+  <section class="fade-in">
+    <h2>Core Pillars</h2>
+    <div class="card">
+      <h3>KV Enterprise</h3>
+      <p>Our flagship operations and consulting engine, building income ecosystems and high-performance systems for fundable ventures.</p>
+    </div>
+    <div class="card">
+      <h3>KV Academy</h3>
+      <p>A 501(c)(3) education nonprofit focused on digital enterprise, trading, coding, and mindset growth for youth and emerging leaders.</p>
+    </div>
+    <div class="card">
+      <h3>KV Special Projects</h3>
+      <p>Where innovation lives — special assets, IP plays, partner builds, and mission-driven ventures across tech, culture, and health.</p>
+    </div>
+  </section>
+
+  <section class="fade-in">
+    <h2>Active Partners</h2>
+    <div class="card">
+      <h3>KVFX & WhisperZonez</h3>
+      <p>Automated market intelligence, algo alerts, and sentiment-driven trade systems. Designed for retail traders, scaled for institutions.</p>
+    </div>
+    <div class="card">
+      <h3>TradeCodeTech</h3>
+      <p>Backend systems, AI integrations, and dev solutions for digital entrepreneurs, educators, and fundable startups.</p>
+    </div>
+    <div class="card">
+      <h3>Neighborhood Prints</h3>
+      <p>Local print and brand support hub. Offering flyers, resumes, scanning, collateral, and content systems for Lubbock creatives.</p>
+    </div>
+  </section>
+
+  <section class="fade-in">
+    <h2>Get in Touch</h2>
+    <form action="mailto:info@keenvisions.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" rows="4" placeholder="Your message" required></textarea>
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Keen Visions Holdings. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('nav-list');
+      nav.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

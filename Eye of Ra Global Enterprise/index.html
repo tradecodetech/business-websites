@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eye of Ra Global Enterprise</title>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Eye of Ra Global Enterprise</h1>
+    <p>Preserving Wealth. Structuring Legacy. Holding the Future.</p>
+  </header>
+
+  <!-- SECRET EYE SYMBOL -->
+  <div class="eye-symbol">
+    <img src="images/eye-of-ra-mythic.svg" alt="Eye of Ra Symbol">
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#assets">Assets</a>
+    <a href="#security">Security</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      <span style="color: var(--gold); font-weight: 600;">Eye of Ra</span> operates as a trust-aligned consulting and 
+      asset-governance enterprise specializing in generational wealth architecture, alternative asset custody oversight, 
+      and high-trust strategic structuring.
+    </p>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Trust Structure Consulting & Private Trust Law Guidance</li>
+      <li>Digital & Alternative Asset Custody Oversight</li>
+      <li>Family Office Legacy Architecture & Sovereign Planning</li>
+      <li>Private Client Structuring & Confidential Governance</li>
+      <li>Digital Privacy, Security, and Sovereignty Protocols</li>
+    </ul>
+  </section>
+
+  <!-- ASSETS -->
+  <section id="assets">
+    <h2>Assets We Work With</h2>
+    <ul>
+      <li>Digital Currencies & Tokens (Cold Storage Structures)</li>
+      <li>Precious Metals, Artifacts, and Collectible Assets</li>
+      <li>Private Equity, IP Holdings & Early-Stage Ventures</li>
+      <li>Real Estate, Land Title Trusts & Beneficial Ownership</li>
+      <li>Digital Brands, Platforms & Codebases</li>
+    </ul>
+  </section>
+
+  <!-- SECURITY -->
+  <section id="security">
+    <h2>Security & Trust</h2>
+    <p>
+      Our structures are aligned with private trust law, confidentiality requirements, and modern sovereignty frameworks.
+      Whether navigating new asset classes or multi-jurisdictional transitions, Eye of Ra ensures clarity, continuity, 
+      and intentional protection.
+    </p>
+    <p><strong>Disclaimer:</strong> Eye of Ra provides structural and educational strategy, not investment advice.</p>
+  </section>
+
+  <!-- CONTACT CTA -->
+  <section id="contact" class="cta">
+    <h2>Begin Your Legacy Strategy</h2>
+    <p>Request a private consultation or an onboarding overview of how Eye of Ra operates.</p>
+    <p><strong>Email:</strong> hello@eyeofra.global</p>
+    <p><strong>Phone:</strong> (000) 000-0000</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 Eye of Ra Global Enterprise. All Rights Reserved. |
+    <em>Built with trust. Guarded by legacy.</em>
+  </footer>
+
+  <!-- TRIPLE TAP SECRET UNLOCK -->
+  <script>
+    let tapCount = 0;
+    let tapTimer;
+
+    document.querySelector(".eye-symbol img").addEventListener("click", function () {
+        tapCount++;
+
+        clearTimeout(tapTimer);
+        tapTimer = setTimeout(() => tapCount = 0, 4000);
+
+        if (tapCount === 3) {
+            window.location.href = "inner-circle.html";
+        }
+    });
+  </script>
+
+</body>
+</html>

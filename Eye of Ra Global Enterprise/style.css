@@ -1,0 +1,265 @@
+/* ---------------------------------------------
+   FONTS + GLOBAL VARIABLES
+----------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    --gold: #d4af37;
+    --soft-gold: #c8a860;
+    --black: #0d0d0d;
+    --night: #111111;
+    --charcoal: #1a1a1a;
+    --gray: #dcdcdc;
+
+    --header-font: 'Cinzel', serif;
+    --body-font: 'Lato', sans-serif;
+
+    --radius: 6px;
+    --transition: 0.3s ease;
+}
+
+/* ---------------------------------------------
+   BASE BODY
+----------------------------------------------*/
+body {
+    margin: 0;
+    background-color: var(--black);
+    color: var(--gray);
+    font-family: var(--body-font);
+    line-height: 1.7;
+}
+
+/* ---------------------------------------------
+   HEADER
+----------------------------------------------*/
+header {
+    background: linear-gradient(to bottom, var(--night), var(--black));
+    padding: 3rem 1rem;
+    text-align: center;
+    border-bottom: 2px solid var(--gold);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: var(--gold);
+    font-family: var(--header-font);
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 0.6rem;
+    font-size: 1.15rem;
+    color: var(--soft-gold);
+    opacity: 0.9;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------------------------------------------
+   SECRET EYE SYMBOL
+----------------------------------------------*/
+.eye-symbol {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.eye-symbol img {
+    width: 95px;
+    opacity: 0.55;
+    transition: 0.35s ease;
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(212,175,55,0.15));
+}
+
+.eye-symbol img:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 12px rgba(212,175,55,0.55));
+}
+
+/* ---------------------------------------------
+   NAVIGATION
+----------------------------------------------*/
+nav {
+    background-color: var(--charcoal);
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #222;
+}
+
+nav a {
+    color: var(--gray);
+    text-decoration: none;
+    margin: 0 1.2rem;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* ---------------------------------------------
+   SECTIONS
+----------------------------------------------*/
+section {
+    padding: 3rem 1.5rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    font-family: var(--header-font);
+    color: var(--gold);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-left: 3px solid var(--gold);
+    padding-left: 0.6rem;
+}
+
+ul li {
+    margin-bottom: 0.8rem;
+}
+
+/* ---------------------------------------------
+   CTA BOX
+----------------------------------------------*/
+.cta {
+    background: linear-gradient(to bottom, var(--charcoal), var(--black));
+    padding: 3rem 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    border: 1px solid #222;
+    border-radius: var(--radius);
+}
+
+.cta p {
+    max-width: 600px;
+    margin: auto;
+    color: #e6e6e6;
+}
+
+/* ---------------------------------------------
+   FOOTER
+----------------------------------------------*/
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--night);
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 3rem;
+    border-top: 1px solid #222;
+}
+
+footer em {
+    color: var(--soft-gold);
+}
+
+/* ---------------------------------------------
+   INNER CIRCLE — SCROLL CHAMBER
+----------------------------------------------*/
+.scroll-frame {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 3rem 2rem;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 8px;
+    background: rgba(15, 15, 15, 0.85);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+    position: relative;
+    animation: chamberFade 1.8s ease forwards;
+    opacity: 0;
+}
+
+@keyframes chamberFade {
+    0% { opacity: 0; transform: translateY(25px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.glyph {
+    position: absolute;
+    width: 38px;
+    opacity: 0.55;
+}
+
+.glyph.top-left { top: -18px; left: -18px; }
+.glyph.top-right { top: -18px; right: -18px; }
+.glyph.bottom-left { bottom: -18px; left: -18px; }
+.glyph.bottom-right { bottom: -18px; right: -18px; }
+
+.scroll-title {
+    font-family: var(--header-font);
+    text-align: center;
+    color: var(--gold);
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+}
+
+.divider {
+    width: 140px;
+    height: 2px;
+    background: var(--gold);
+    margin: 0.8rem auto 2rem auto;
+    opacity: 0.65;
+}
+
+.scroll-text {
+    font-size: 1.15rem;
+    line-height: 1.85;
+    color: #d8d8d8;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* Seal */
+.seal {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.seal img {
+    width: 90px;
+    opacity: 0.7;
+    transition: 0.4s ease;
+    filter: drop-shadow(0 0 4px rgba(212,175,55,0.25));
+}
+
+.seal img:hover {
+    opacity: 1;
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 10px rgba(212,175,55,0.6));
+}
+
+/* Return Link */
+.return-link {
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--soft-gold);
+    font-family: var(--header-font);
+    letter-spacing: 1px;
+    opacity: 0.75;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+
+.return-link:hover {
+    opacity: 1;
+    color: var(--gold);
+}
+
+/* ---------------------------------------------
+   RESPONSIVE FIXES
+----------------------------------------------*/
+@media (max-width: 600px) {
+    header h1 { font-size: 2.2rem; }
+    nav a { margin: 0 0.8rem; font-size: 0.9rem; }
+    .scroll-frame { padding: 2rem 1.3rem; }
+    .scroll-title { font-size: 2rem; }
+    .scroll-text { font-size: 1.05rem; }
+}
